@@ -14,7 +14,7 @@ import com.csmtech.model.User;
 import com.csmtech.service.UserService;
 
 @Controller
-@RequestMapping("exam")
+ @RequestMapping("exam") 
 public class ProctorController {
 	
 	@Autowired

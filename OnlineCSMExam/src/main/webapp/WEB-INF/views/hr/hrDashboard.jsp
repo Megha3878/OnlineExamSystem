@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<%@ include file="hrNavbar.jsp" %>
+<%@ include file="hrNavbar.jsp"%>
 </head>
 <body>
-<h1>hy Hr</h1>
 </body>
 </html>

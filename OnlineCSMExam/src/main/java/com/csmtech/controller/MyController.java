@@ -1,4 +1,4 @@
-																																																					package com.csmtech.controller;
+package com.csmtech.controller;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -57,18 +57,17 @@ public class MyController {
 
 	@PostMapping("/loginHere")
 	public String loginAdminHere(@RequestParam String username, @RequestParam String password, Model model) {
-        boolean flag=true;
+		boolean flag = true;
 		System.out.println("+++++" + username);
 		System.out.println(password);
 
 		User user = userService.findUserByUsernameAndPasswordForCheck(username, password);
 		flag = userService.findUserByUsernameAndPassword(username, password);
-		if(flag)
-		{
-			int roleid= userService.findRoleIdByUsernameAndPassword(username, password);
+		if (flag) {
+			int roleid = userService.findRoleIdByUsernameAndPassword(username, password);
 			Role role = roleService.findById(roleid);
 			System.out.println(roleid);
-			String roleName=role.getRoleName();
+			String roleName = role.getRoleName();
 			httpSession.setAttribute("sessionData", user);
 			if("Admin".equalsIgnoreCase(roleName))
 			{

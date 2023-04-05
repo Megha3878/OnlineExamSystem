@@ -10,7 +10,7 @@
 <link
 	rel="https://cdnjs.datatables/1.12.1/css/dataTables.bootstrap4.min.css">
 <!-- Option 1: Include in HTML -->
- <link rel="stylesheet"
+<link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script
@@ -37,28 +37,31 @@ navbar {
 
 .navbar-nav {
 	margin-left: auto;
+}
 
-}
-.footer{
+.footer {
 	clear: both;
-    position: relative;
-   	margin-bottom: 0;
-   width: 100%;
-   background-color:#23395d;
-   text-align: center;
-   text-decoration: white;
+	position: relative;
+	margin-bottom: 0;
+	width: 100%;
+	background-color: #23395d;
+	text-align: center;
+	text-decoration: white;
 }
-.setdiv{
-   margin-left: 2px;
+
+.setdiv {
+	margin-left: 2px;
 }
 </style>
 <body>
 
 	<div class="row">
-		<div class="imgposition col-md-2" style="margin-left: 0px; padding: 15px">
+		<div class="imgposition col-md-2"
+			style="margin-left: 0px; padding: 15px">
 			<img alt="" src="../img/logocsm.png">
 		</div>
 		<nav class="navbar col-md-10" style="background-color: #23395d">
+<<<<<<< Upstream, based on origin/master
 
 					<a class="navbar-bar p-3" href=""><i class="fa fa-list-ul fa-2px text-white text-center" aria-hidden="true"></br>items</i></a>
 			
@@ -89,11 +92,21 @@ navbar {
 					</div>
 					
 			
+=======
+			<a class="navbar-bar p-3" href="./hrmanageProfile"><i
+				class="fa fa-user-gear fa-2px text-white text-center"
+				aria-hidden="true"></br>Manage Profile</i></a> <a class="navbar-bar p-3"
+				href="./viewResult"><i
+				class="fa fa-user-gear fa-2px text-white text-center"
+				aria-hidden="true"></br>View Result</i></a> <a class="navbar-bar p-3"
+				href="./forgotPassword"><i
+				class="fa fa-key fa-3px text-white text-center" aria-hidden="true"></br>Forget
+					Password</i> </a> <a class="navbar-bar p-3 text-white" href=""><i
+				class="fa fa-user fa-2x text-white" text-center aria-hidden="true"></i></br>${sessionData.name}</a>
+			<a class="navbar-bar p-3" href="./logout"><i
+				class="fa fa-sign-out fa-2x text-white" aria-hidden="true"></i> </a>
+>>>>>>> c8e5a72 initial commit
 		</nav>
-		
 	</div>
-	
-	
-	
 </body>
 </html>

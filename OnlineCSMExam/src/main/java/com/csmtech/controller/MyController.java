@@ -114,6 +114,8 @@ public class MyController {
 	@GetMapping("/addCandidate")
 	public String addCandPage(Model model) {
 		
+		User user=(User)this.httpSession.getAttribute("sessionData");
+		model.addAttribute("username",user.getName());
 		model.addAttribute("allCandidate",candService.findAllCandidate());
 		model.addAttribute("key1", "active");
 		return "admin/addCandidate";

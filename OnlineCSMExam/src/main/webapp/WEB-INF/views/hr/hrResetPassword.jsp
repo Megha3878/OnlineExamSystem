@@ -25,7 +25,7 @@
 								<input name="newpassword" required="required" type="password" placeholder="Enter New Password Here" class="form-control">
                       		</div>
                       		<div class="form-group">
-								<input name="password" required="required" type="password" placeholder="Enter New Password Here" class="form-control">
+								<input name="cpassword" required="required" type="password" placeholder="Enter New Password Here" class="form-control">
                       		</div>
                       		<div class="container text-center">
                       			<button class="btn btn-success">Change password</button>

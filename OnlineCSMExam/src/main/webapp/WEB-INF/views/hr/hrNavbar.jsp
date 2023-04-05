@@ -82,15 +82,9 @@ navbar {
 					
 				
 					<div>
-					<a class="navbar-brand " href="./manageUsers"><i class="bi bi-people-fill fa-1x text-white"></i></a>
-	
-				
+					<a class="navbar-bar p-3" href=""><i class="fa fa-cogs fa-2x text-white" aria-hidden="true"></i> </a>
 					<a class="navbar-bar p-3" href=""><i class="fa fa-question fa-2x text-white" aria-hidden="true"></i> </a>
-					
-				
 					<a class="navbar-bar p-3 text-white" href=""><i class="fa fa-user fa-2x text-white" aria-hidden="true"></i>${username}</a>
-					
-				
 					<a class="navbar-bar p-3" href="./logout"><i class="fa fa-sign-out fa-2x text-white" aria-hidden="true"></i> </a>
 					</div>
 					

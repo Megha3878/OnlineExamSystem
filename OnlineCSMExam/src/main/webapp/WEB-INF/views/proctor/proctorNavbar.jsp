@@ -11,8 +11,7 @@
 <link
 	rel="https://cdnjs.datatables/1.12.1/css/dataTables.bootstrap4.min.css">
 <!-- Option 1: Include in HTML -->
- <link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script
 	src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
@@ -64,13 +63,14 @@ navbar {
 					<div>
 					<a class="navbar-bar p-3" href=""><i class="fa fa-list-ul fa-2px text-white text-center" aria-hidden="true"></br>Manage Questions</i></a>
 			
-					<a class="navbar-bar p-3" href=""><i class="fa fa-clipboard fa-2px text-white text-center" aria-hidden="true"></br>Manage Exam</i></a>
+					<a class="navbar-bar p-3" href=""><i class="fa fa-pen-to-square text-white text-center" aria-hidden="true"></br>Manage Exam</i></a>
 				
-					<a class="navbar-bar p-3" href=""><i class="fa fa-user-gear fa-2px text-white text-center" aria-hidden="true"></br>Manage Profile</i></a>
+					<a class="navbar-bar p-3" href="./manageProfile"><i class="fa fa-user-gear fa-2px text-white text-center" aria-hidden="true"></br>Manage Profile</i></a>
 			
 					<a class="navbar-bar p-3" href="./forgetPassword"><i class="fa fa-key fa-2px text-white text-center" aria-hidden="true"></br>Forget Password</i> </a>
 					</div>
 					<div>
+					
 					<a class="navbar-bar p-3" href=""><i class="fa fa-question fa-2x text-white" aria-hidden="true"></i> </a>
 					<a class="navbar-bar p-3 text-white" href=""><i class="fa fa-user fa-2x text-white" aria-hidden="true"></i> ${username}</a>
 					<a class="navbar-bar p-3" href="./logout"><i class="fa fa-sign-out fa-2x text-white" aria-hidden="true"></i> </a>

@@ -61,26 +61,23 @@ navbar {
 			<img alt="" src="../img/logocsm.png">
 		</div>
 		<nav class="navbar col-md-10" style="background-color: #23395d">
-
+					<div>
 					<a class="navbar-bar p-3" href=""><i class="fa fa-list-ul fa-2px text-white text-center" aria-hidden="true"></br>Manage Questions</i></a>
 			
 					<a class="navbar-bar p-3" href=""><i class="fa fa-clipboard fa-2px text-white text-center" aria-hidden="true"></br>Manage Exam</i></a>
 				
-					<a class="navbar-bar p-3" href=""><i class="fa fa-graduation-cap fa-2px text-white text-center" aria-hidden="true"></br>Manage Profile</i></a>
+					<a class="navbar-bar p-3" href=""><i class="fa fa-user-gear fa-2px text-white text-center" aria-hidden="true"></br>Manage Profile</i></a>
 			
-					<a class="navbar-bar p-3" href=""><i class="fa fa-users fa-2px text-white text-center" aria-hidden="true"></br>Forget Password</i> </a>
+					<a class="navbar-bar p-3" href="./forgetPassword"><i class="fa fa-key fa-2px text-white text-center" aria-hidden="true"></br>Forget Password</i> </a>
+					</div>
 					<div>
 					<a class="navbar-bar p-3" href=""><i class="fa fa-question fa-2x text-white" aria-hidden="true"></i> </a>
-					
-				
-					<a class="navbar-bar p-3 text-white" href=""><i class="fa fa-user fa-2x text-white" aria-hidden="true"></i>${username}</a>
-					
-				
+					<a class="navbar-bar p-3 text-white" href=""><i class="fa fa-user fa-2x text-white" aria-hidden="true"></i> ${username}</a>
 					<a class="navbar-bar p-3" href="./logout"><i class="fa fa-sign-out fa-2x text-white" aria-hidden="true"></i> </a>
 					</div>
 					
 			
-		</nav>
+		</nav>\
 		
 	</div>
 

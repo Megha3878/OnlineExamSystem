@@ -225,7 +225,7 @@ position: fixed;
 								
 								<div class="form-group col-md-6 offset-md-3">
 									<label>Address :<span class="text-danger">*</span></label> <br> 
-										<textarea name="address" id="address" value="${cand.address}" class="form-control"></textarea>
+										<textarea name="address" id="address" class="form-control">${cand.address}</textarea>
 								</div>
 								
 								

@@ -76,7 +76,7 @@ navbar {
 					
 					<a class="navbar-bar p-3" href=""><i class="fa fa-calendar fa-2px text-white text-center" aria-hidden="true"></br>Event Log</i> </a>
 					
-					<a class="navbar-bar p-3" href="./addCandidate"><i class="fa fa-calendar fa-2px text-white text-center" aria-hidden="true"></br>Add Candidate</i> </a>
+					<a class="navbar-bar p-3" href="./addCandidate"><i class="fa fa-user-plus fa-2px text-white text-center" aria-hidden="true"></br>Add Candidate</i> </a>
 				
 					<a class="navbar-bar p-3" href=""><i class="fa fa-cogs fa-2x text-white" aria-hidden="true"></i> </a>
 					

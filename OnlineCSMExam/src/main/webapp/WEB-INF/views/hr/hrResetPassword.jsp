@@ -19,29 +19,6 @@
 <body>
 
 	<div class="container">
-<<<<<<< Upstream, based on origin/master
-            <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="login-column" class="col-md-6">
-                    <div id="login-box" style="height: 240px;" class="col-md-12">
-                      
-                      <h3 class="text-center mt-4">Enter new password</h3>
-                      
-                      <form action="/change-password" method="post">
-                      		<div class="form-group">
-								<input name="newpassword" required="required" type="password" placeholder="Enter New Password Here" class="form-control">
-                      		</div>
-                      		<div class="form-group">
-								<input name="cpassword" required="required" type="password" placeholder="Enter New Password Here" class="form-control">
-                      		</div>
-                      		<div class="container text-center">
-                      			<button class="btn btn-success">Change password</button>
-                      		</div>
-                      </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-=======
 		<div id="login-row"
 			class="row justify-content-center align-items-center">
 			<div id="login-column" class="col-md-6">
@@ -49,14 +26,17 @@
 
 					<h3 class="text-center mt-4">Enter new password</h3>
 
-					<form action="/change-password" method="post">
+					<form action="./savePassword" method="post">
+						<input type="hidden" name="userId" id="userId" value="${userid}">
 						<div class="form-group">
-							<input name="newpassword" required="required" type="password"
-								placeholder="Enter New Password Here" class="form-control">
+							<input name="newpassword" id="newpassword" required="required"
+								type="password" placeholder="Enter New Password Here"
+								class="form-control">
 						</div>
 						<div class="form-group">
-							<input name="password" required="required" type="password"
-								placeholder="Enter New Password Here" class="form-control">
+							<input name="password" id="password" required="required"
+								type="password" placeholder="Enter New Password Here"
+								class="form-control">
 						</div>
 						<div class="container text-center">
 							<button class="btn btn-success">Change password</button>
@@ -66,7 +46,6 @@
 			</div>
 		</div>
 	</div>
->>>>>>> c8e5a72 initial commit
 
 </body>
 </html>

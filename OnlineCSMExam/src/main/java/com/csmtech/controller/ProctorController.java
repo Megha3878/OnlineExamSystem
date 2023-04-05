@@ -31,7 +31,7 @@ public class ProctorController {
 		 
 		
 		System.out.println("get............");
-		return "proctor/proctorResetPassword";
+		return "proctor/resetPassword";
 		
 	}
 	

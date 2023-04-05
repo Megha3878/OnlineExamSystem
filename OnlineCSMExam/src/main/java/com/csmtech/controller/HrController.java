@@ -1,5 +1,7 @@
 package com.csmtech.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,13 +22,15 @@ public class HrController {
 
 	@Autowired
 	public UserService userService;
-	
+
 	@Autowired
 	public CandidateService candidateService;
 
+	@Autowired
+	public HttpSession httpSession;
+
 	@GetMapping("/hrDashboard")
 	public String getHrDashboard() {
-		
 		return "hr/hrDashboard";
 	}
 
@@ -56,10 +60,36 @@ public class HrController {
 	}
 
 	@GetMapping(path = "/forgotPassword")
-	public String forgotPassword() {
+	public String forgotPassword(Model model) {
+		User user = (User) this.httpSession.getAttribute("sessionData");
+		model.addAttribute("username", user.getName());
+		System.out.println("inside forgotpassword");
 		return "hr/hrResetPassword";
 	}
-	
+
+	@PostMapping(path = "/savePassword")
+	public String savePassword(@RequestParam(value = "userId", required = false) Integer userId,
+			@RequestParam(value = "newpassword") String newPassword, @RequestParam(value = "password") String password,
+			Model model) {
+		System.out.println("inside change::::::");
+
+		User user = (User) this.httpSession.getAttribute("sessionData");
+		model.addAttribute("username", user.getName());
+		model.addAttribute("userid", user.getUserId());
+		System.out.println("inside hr forgot password");
+		System.out.println("ID::" + user.getUserId());
+
+		if (newPassword.equals(password)) {
+			user.setPassword(password);
+			userService.saveDetailsOfUser(user);
+		} else {
+			model.addAttribute("msg", "Entered password is wrong..!! ");
+			System.out.println("error");
+		}
+		return "redirect:./forgotPassword";
+
+	}
+
 	@GetMapping(path = "/viewResult")
 	public String viewResult() {
 		return "hr/viewResult";

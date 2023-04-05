@@ -17,20 +17,7 @@
 	src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script
 	src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
-<!-- ......................for nav tab bar.............................................. -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
-
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
-
-
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
 
 </head>
 <style>
@@ -98,7 +85,7 @@
 				<div class="form-group col-md-6 offset-md-3">
 					<label>Address :<span class="text-danger">*</span></label> <br>
 					<textarea name="userAddress" id="userAddressId"
-						class="form-control" value="${sessionData.userAddress}"></textarea>
+						class="form-control">${sessionData.userAddress}</textarea>
 				</div>
 				<div class="form-group col-md-6 offset-md-3" align="center">
 					<input type="submit" id="tabOneSubmit"
